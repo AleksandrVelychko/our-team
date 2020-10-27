@@ -1,0 +1,142 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1150px;
+  height: 560px;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 1px;
+    height: 100%;
+    content: "";
+    background: orange;
+  }
+}
+
+.main__info {
+  text-align: center;
+  color: var(--grey);
+}
+
+.main__title {
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 50px;
+
+  &::after {
+    width: 100px;
+    height: 1px;
+    position: absolute;
+    left: 50%;
+    top: auto;
+    right: auto;
+    bottom: -9px;
+    content: "";
+    background: #ffcc00;
+    transform: translateX(-50%);
+  }
+}
+
+.main__img {
+  border: 1px solid orange;
+}
+
+.img__block {
+  border: 1px solid orange;
+  padding: 15px;
+}
+
+.main__subtitle {
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.main_icons {
+  display: flex;
+  width: 140px;
+  margin: 0 auto;
+}
+
+.img_icons {
+  margin-right: 5px;
+  margin-bottom: 25px;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.main__text {
+  width: 430px;
+  margin-bottom: 50px;
+}
+
+.line {
+  width: 20px;
+  height: 4px;
+  background: orange;
+  position: relative;
+  margin: 0 auto 25px;
+}
+
+.link {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 800;
+  border: 2px solid;
+  border-color: orange;
+  color: var(--grey);
+  padding: 10px;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: orange;
+    color: #fff;
+  }
+}
+
+.clicker {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.clicker__button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #ffcc00;
+  border: 1px solid #fff;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: all 0.3s;
+
+  &:hover {
+    background: #fff;
+    border-color: orange;
+  }
+}
+
+.clicker__button--active {
+  background: #fff;
+  border-color: orange;
+}
+
+.arrow__item {
+  cursor: pointer;
+  transition: all 0.5s;
+
+  &:hover {
+    transform: scale(1.5);
+  }
+}

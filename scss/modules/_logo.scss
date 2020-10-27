@@ -1,0 +1,11 @@
+.header__img {
+  position: relative;
+
+  &::before {
+    content: "";
+    height: 2px;
+    width: 26%;
+    position: absolute;
+    color: aqua;
+  }
+}

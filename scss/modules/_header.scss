@@ -1,0 +1,50 @@
+.header {
+  text-align: center;
+  width: 450px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 100px;
+
+  &__slogan {
+    font-size: 18px;
+    font-weight: 400;
+    color: #898f8f;
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    font-size: 60px;
+    font-weight: 800;
+    color: #ffcc00;
+    margin-bottom: 35px;
+  }
+}
+
+.header__img {
+  top: 10px;
+}
+
+.header::before {
+  position: absolute;
+  left: 0;
+  top: auto;
+  right: auto;
+  bottom: 0;
+  width: 48%;
+  height: 1px;
+  content: "";
+  background: #ffcc00;
+}
+
+.header::after {
+  position: absolute;
+  right: 0;
+  top: auto;
+  left: auto;
+  bottom: 0;
+  width: 48%;
+  height: 1px;
+  content: "";
+  background: #ffcc00;
+}

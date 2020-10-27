@@ -1,0 +1,6 @@
+.header__img::before {
+  content: "";
+  height: 2px;
+  width: 26%;
+}
+/*# sourceMappingURL=logo.min.css.map */
